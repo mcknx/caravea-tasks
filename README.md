@@ -3,6 +3,8 @@
 A small task tracker with full CRUD: create, list (with a status filter), edit and delete tasks.
 Built for the Caravea Full-Stack Developer assessment. Started 8 Oct 2026, 20:38 PHT.
 
+**Video walkthrough (7 min):** https://drive.google.com/file/d/13K2B7gKFkEg0W7u41-VDAK5fjf-ZuQZr/view?usp=sharing
+
 - `api/` Laravel 13 JSON API, SQLite
 - `web/` Next.js 16 (App Router, TypeScript, Tailwind)
 
