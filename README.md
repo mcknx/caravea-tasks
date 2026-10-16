@@ -1,9 +1,27 @@
 # Tasks — Laravel API + Next.js
 
+![Tasks app: list with status filter, priorities and due dates](docs/screenshot.png)
+
+**What this proves:** a clean split between a Laravel JSON API and a Next.js client — validation in one place, typed server-side data fetching, and tests at both layers that pass on a fresh clone.
+
+**Case study:** https://mckenneth.vercel.app/case-studies/caravea-tasks/ · **Video walkthrough (7 min):** https://drive.google.com/file/d/13K2B7gKFkEg0W7u41-VDAK5fjf-ZuQZr/view?usp=sharing · No hosted demo — run it locally with the steps below.
+
+**Tests (re-run 16 Oct 2026 on a fresh clone):**
+
+```
+$ cd api && php artisan test
+  Tests:    7 passed (27 assertions)
+
+$ cd web && BASE=http://localhost:3011 npm run test:e2e
+ok  validation error shown from Laravel
+ok  created
+ok  updated
+ok  filtered
+ok  deleted
+```
+
 A small task tracker with full CRUD: create, list (with a status filter), edit and delete tasks.
 Built for the Caravea Full-Stack Developer assessment. Started 8 Oct 2026, 20:38 PHT.
-
-**Video walkthrough (7 min):** https://drive.google.com/file/d/13K2B7gKFkEg0W7u41-VDAK5fjf-ZuQZr/view?usp=sharing
 
 - `api/` Laravel 13 JSON API, SQLite
 - `web/` Next.js 16 (App Router, TypeScript, Tailwind)
