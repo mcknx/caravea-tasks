@@ -30,7 +30,7 @@ A second, smaller one: the AI's training is older than Next.js 16 and Laravel 13
   - `brainstorming`: design first, approved by me before any code.
   - `test-driven-development`: the 7 API tests were written first and watched fail.
   - `ponytail`: keeps the code minimal.
-- **Process:** design → my approval → failing tests → implementation → tests pass → real-browser e2e → commit. It's visible in the commit history.
+- **Process:** design → my approval → failing tests → implementation → tests pass → real-browser e2e. Built in one Claude Code session and committed in logical chunks at the end, so that order isn't visible as separate commits.
 
 ## Prompt history
 
